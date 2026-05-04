@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atresmusica — Project</title>
+  <meta name="description" content="Project page portfolio case study" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: ['class', '[data-theme="dark"]'],
+      theme: { extend: { fontFamily: { sans: ['DM Sans', 'sans-serif'] } } }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="site-body font-sans text-[#111111] project-page">
+  <div id="loader" class="loader-screen"><div class="loader-core"></div><span>Loading</span></div>
+  <div class="cursor-dot"></div><div class="cursor-ring"></div>
+  <header id="siteHeader" class="site-header sticky top-0 z-50">
+    <div class="header-inner">
+      <a href="index.html" class="logo magnetic">Josefina's UX/UI Portfolio</a>
+      <nav class="desktop-nav" aria-label="Primary"><a href="index.html#projects" class="magnetic">Work</a><a href="index.html#about" class="magnetic">About</a><a href="#footer" class="magnetic">Contact</a></nav>
+      <div class="header-actions"><button type="button" class="theme-toggle magnetic" data-theme-toggle aria-label="Toggle theme"></button><button id="menuToggle" class="menu-toggle magnetic" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><span></span><span></span></button></div>
+    </div>
+  </header>
+  <div id="mobileMenu" class="mobile-menu hidden" role="dialog" aria-modal="true"><div class="mobile-menu-panel"><a href="index.html#projects" class="mobile-link">Work</a><a href="index.html#about" class="mobile-link">About</a><a href="#footer" class="mobile-link">Contact</a><a href="index.html" class="mobile-link">Home</a></div></div>
+  <main class="page-wrap project-layout">
+    <section class="intro-grid reveal-section"><h1>Atresmusica</h1><p>Atresmúsica es el sello discográfico del Grupo Atresmedia, especializado en música vinculada a sus series, películas y programas de entretenimiento. Desde su plataforma oficial ofrece bandas sonoras originales, cabeceras musicales icónicas y una cuidada selección de lanzamientos, además de servicios de asesoría y supervisión musical para producciones audiovisuales.</p></section>
+    <section class="project-meta-panel reveal-section">
+      <div class="meta-grid">
+        <div class="meta-item"><span>PROJECT DATE</span><strong>2024</strong></div>
+        <div class="meta-item"><span>ROLE</span><strong class="accent-text">Research, UX, UI</strong></div>
+        <div class="meta-item"><span>CLIENT</span><strong>Atresmedia</strong></div>
+        <div class="meta-item"><span>VISIT</span><a href="#" target="_blank" rel="noopener noreferrer" class="accent-text">http://www.atresmusica.com/</a></div>
+      </div>
+      <div class="meta-copy-grid">
+        <p>El objetivo era construir una experiencia altamente visual, donde las imágenes y los vídeos se convierten en el eje principal de la interacción.
+A partir de un proceso de research y benchmarking, identifiqué patrones, componentes y referencias clave para definir un lenguaje visual alineado con el producto. Diseñé una estructura clara que organiza y clasifica la música de forma intuitiva, priorizando la exploración y el descubrimiento.</p>
+        <p>El resultado es una interfaz visualmente potente, que combina estética y funcionalidad para facilitar una navegación fluida y atractiva.</p>
+      </div>
+    </section>
+    
+    <section class="showcase-block reveal-section"><img src="atresmusica/a3m-home.png" alt="Large showcase with multiple mobile app screens" width="1600" height="860" loading="eager" /></section>
+    <section class="duo-gallery reveal-section"><img src="atresmusica/a3m-phone.png" alt="Abstract image with concentric light arcs" width="950" height="1050" loading="lazy" /><img src="atresmusica/a3m-bench.png" alt="Abstract image with colorful reflective spheres" width="950" height="1050" loading="lazy" /></section>
+    
+  </main>
+  <footer id="footer" class="site-footer reveal-section"><div class="footer-inner"><div class="footer-left"><p>Un día eres joven y al siguiente guardas cajas vacías “por si acaso”.</p></div><div class="footer-socials"><a href="#" aria-label="LinkedIn">in</a></div></div></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

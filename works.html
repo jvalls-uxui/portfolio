@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works</title>
+  <meta name="description" content="Project page portfolio case study" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: ['class', '[data-theme="dark"]'],
+      theme: { extend: { fontFamily: { sans: ['DM Sans', 'sans-serif'] } } }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="site-body font-sans text-[#111111] project-page">
+  <div id="loader" class="loader-screen"><div class="loader-core"></div><span>Loading</span></div>
+  <div class="cursor-dot"></div><div class="cursor-ring"></div>
+  <header id="siteHeader" class="site-header sticky top-0 z-50">
+    <div class="header-inner">
+      <a href="index.html" class="logo magnetic">Josefina's UX/UI Portfolio</a>
+      <nav class="desktop-nav" aria-label="Primary"><a href="index.html#projects" class="magnetic">Work</a><a href="index.html#about" class="magnetic">About</a><a href="#footer" class="magnetic">Contact</a></nav>
+      <div class="header-actions"><button type="button" class="theme-toggle magnetic" data-theme-toggle aria-label="Toggle theme"></button><button id="menuToggle" class="menu-toggle magnetic" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><span></span><span></span></button></div>
+    </div>
+  </header>
+  <div id="mobileMenu" class="mobile-menu hidden" role="dialog" aria-modal="true"><div class="mobile-menu-panel"><a href="index.html#projects" class="mobile-link">Work</a><a href="index.html#about" class="mobile-link">About</a><a href="#footer" class="mobile-link">Contact</a><a href="index.html" class="mobile-link">Home</a></div></div>
+  <main class="page-wrap project-layout">
+    <section class="intro-grid reveal-section"><h1>Works</h1><p></p></section>
+    
+    <section class="more-projects reveal-section">
+
+      <div class="more-projects-grid">
+      <article><img src="works/a3.png" alt="Dark abstract project preview" width="600" height="320" loading="lazy" /><h4>Antena3</h4>
+      <p>Mantenimiento del Sistema de Diseño, evolutivos, revisión de la accesibilidad segun normativa UNE. Módulos Tu Cara me Suena, La Voz.</p></article>
+
+      <article><img src="https://picsum.photos/seed/project-more-2/600/320" alt="Minimal chair project preview" width="600" height="320" loading="lazy" /><p>Antena 3 Noticias</p>
+      <p>Mantenimiento del Sistema de Diseño, evolutivos, revisión de la accesibilidad segun normativa UNE. Módulos Loterías, Tu Tiempo</p></article>
+
+      <article><img src="https://picsum.photos/seed/project-more-3/600/320" alt="Architectural glass facade project preview" width="600" height="320" loading="lazy" /><p>Sanitas En Casa Contigo</p>
+      <p>Diseño App mobile</p>
+      </article>
+
+            <article><img src="https://picsum.photos/seed/project-more-1/600/320" alt="Dark abstract project preview" width="600" height="320" loading="lazy" /><p>Antena3 y Antena3 Noticias</p>
+      <p>Mantenimeinto de los Sistemas de Diseño para Antena 3 y Antena 3 Noticias.</p>
+      </article>
+      <article><img src="https://picsum.photos/seed/project-more-2/600/320" alt="Minimal chair project preview" width="600" height="320" loading="lazy" /><p>Sanitas En Casa Contigo</p>
+      <p>Diseño App mobile</p></article>
+      <article><img src="https://picsum.photos/seed/project-more-3/600/320" alt="Architectural glass facade project preview" width="600" height="320" loading="lazy" /><p>Ficosa</p>
+      <p>Diseño Guía de estilo de componentes.</p>
+      </article>
+
+            <article><img src="https://picsum.photos/seed/project-more-1/600/320" alt="Dark abstract project preview" width="600" height="320" loading="lazy" /><p>Antena3 y Antena3 Noticias</p>
+      <p>Mantenimeinto de los Sistemas de Diseño para Antena 3 y Antena 3 Noticias.</p>
+      </article>
+      <article><img src="https://picsum.photos/seed/project-more-2/600/320" alt="Minimal chair project preview" width="600" height="320" loading="lazy" /><p>Sanitas En Casa Contigo</p>
+      <p>Diseño App mobile</p></article>
+      <article><img src="https://picsum.photos/seed/project-more-3/600/320" alt="Architectural glass facade project preview" width="600" height="320" loading="lazy" /><p>Ficosa</p>
+      <p>Diseño Guía de estilo de componentes.</p>
+      </article>
+
+
+
+
+    </div></section>
+  </main>
+  <footer id="footer" class="site-footer reveal-section"><div class="footer-inner"><div class="footer-left"><p>Un día eres joven y al siguiente guardas cajas vacías “por si acaso”.</p></div><div class="footer-socials"><a href="#" aria-label="LinkedIn">in</a></div></div></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

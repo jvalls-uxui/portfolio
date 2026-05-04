@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Josefina Valls — Portfolio</title>
+  <meta name="description" content="UX/UI designer portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: ['class', '[data-theme="dark"]'],
+      theme: { extend: { fontFamily: { sans: ['DM Sans', 'sans-serif'] } } }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="site-body font-sans text-[#111111]">
+  <div id="loader" class="loader-screen"><div class="loader-core"></div><span>Loading</span></div>
+  <div class="cursor-dot"></div><div class="cursor-ring"></div>
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] focus:bg-black focus:px-4 focus:py-2 focus:text-white">Skip to content</a>
+  <header id="siteHeader" class="site-header sticky top-0 z-50">
+    <div class="header-inner">
+      <a href="index.html" class="logo magnetic">Josefina's UX/UI Portfolio</a>
+      <nav class="desktop-nav" aria-label="Primary">
+        <a href="#projects" class="magnetic">Work</a>
+        <a href="#about" class="magnetic">About</a>
+        <a href="#footer" class="magnetic">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="theme-toggle magnetic" data-theme-toggle aria-label="Toggle theme"></button>
+        <button id="menuToggle" class="menu-toggle magnetic" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div id="mobileMenu" class="mobile-menu hidden" role="dialog" aria-modal="true"><div class="mobile-menu-panel"><a href="#projects" class="mobile-link">Work</a><a href="#about" class="mobile-link">About</a><a href="#footer" class="mobile-link">Contact</a><a href="project.html" class="mobile-link">Project</a></div></div>
+  <main id="main" class="page-wrap home-page">
+    <section class="hero-section reveal-section"><h1>I’m Josefina, a UX/UI designer. This is my portfolio. And yes, it is a template.</h1></section>
+    <section id="projects" class="section-block reveal-section">
+      <div class="section-head"><h2>Work</h2><div class="rule"></div></div>
+      <div class="projects-grid home-projects-grid">
+        <a href="irradia-web.html" class="project-card magnetic"><span class="project-label">01 Irradia</span><img src="Irradia.png" alt="Web Irradiamusica" width="650" height="980" loading="lazy" /></a>
+        <a href="atresmusica-web.html" class="project-card magnetic"><span class="project-label">02 Atresmusica</span><img src="atresmusica.png" alt="Web Atresmusica" width="650" height="980" loading="lazy" /></a>
+        <a href="accesibilidad.html" class="project-card magnetic"><span class="project-label">03 Accesibilidad</span><img src="accesibilidad.png" alt="Accesibilidad web" width="650" height="980" loading="lazy" /></a>
+        <a href="works.html"><button class="plus-button magnetic" aria-label="Open more projects">+</button></a>
+      </div>
+    </section>
+    <section class="section-block reveal-section">
+      <div class="section-head"><h2>Some posts I’ve written.</h2><div class="rule"></div></div>
+      <div class="posts-grid">
+        <article class="post-card"><h3>El ROI en UX</h3><p>12.Jan.2022</p><a href="https://digitalwolves.medium.com/el-roi-en-ux-ada91222eff9">See Now ↗</a></article>
+        <article class="post-card"><h3>Usabilidad estética</h3><p>16.Mar.2022</p><a href="https://digitalwolves.medium.com/usabilidad-est%C3%A9tica-o-la-priorizaci%C3%B3n-de-lo-est%C3%A9tico-frente-a-lo-funcional-c10bee01c35f">See Now ↗</a></article>
+        <article class="post-card post-card-last"><h3>Principios del Diseño Visual en UX</h3><p>24.Nov.2022</p><a href="https://digitalwolves.medium.com/principios-del-dise%C3%B1o-visual-en-ux-89dc57d3e817">See Now ↗</a></article>
+      </div>
+    </section>
+    <section id="about" class="section-block reveal-section about-block">
+      <div class="section-head"><h2>About Me</h2><div class="rule"></div></div>
+      <div class="about-copy">
+        <p>I’m a Senior UX/UI Designer with more than 20 years of experience, specialized in Design Systems, Accessibility, Usability, and User-Centered Design.</p>
+        <p>Extensive experience working with large corporations and public administration.</p>
+        <p>A versatile profile capable of covering the entire design cycle: functional analysis, research, wireframing, prototyping, visual design, and validation.</p>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="site-footer reveal-section"><div class="footer-inner"><div class="footer-left"><p>Un día eres joven y al siguiente guardas cajas vacías “por si acaso”.</p></div><div class="footer-socials"><a href="#" aria-label="LinkedIn">in</a></div></div></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

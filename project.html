@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Irradia — Project</title>
+  <meta name="description" content="Project page portfolio case study" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: ['class', '[data-theme="dark"]'],
+      theme: { extend: { fontFamily: { sans: ['DM Sans', 'sans-serif'] } } }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="site-body font-sans text-[#111111] project-page">
+  <div id="loader" class="loader-screen"><div class="loader-core"></div><span>Loading</span></div>
+  <div class="cursor-dot"></div><div class="cursor-ring"></div>
+  <header id="siteHeader" class="site-header sticky top-0 z-50">
+    <div class="header-inner">
+      <a href="index.html" class="logo magnetic">LOGO</a>
+      <nav class="desktop-nav" aria-label="Primary"><a href="index.html#projects" class="magnetic">Work</a><a href="index.html#about" class="magnetic">About</a><a href="#footer" class="magnetic">Contact</a></nav>
+      <div class="header-actions"><button type="button" class="theme-toggle magnetic" data-theme-toggle aria-label="Toggle theme"></button><button id="menuToggle" class="menu-toggle magnetic" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><span></span><span></span></button></div>
+    </div>
+  </header>
+  <div id="mobileMenu" class="mobile-menu hidden" role="dialog" aria-modal="true"><div class="mobile-menu-panel"><a href="index.html#projects" class="mobile-link">Work</a><a href="index.html#about" class="mobile-link">About</a><a href="#footer" class="mobile-link">Contact</a><a href="index.html" class="mobile-link">Home</a></div></div>
+  <main class="page-wrap project-layout">
+    <section class="intro-grid reveal-section"><h1>Irradia</h1><p>Irradia is a music library developed by Música Aparte and Atresmedia, designed to provide editors and producers with a curated selection of music for use in their audiovisual productions.</p></section>
+    <section class="project-meta-panel reveal-section">
+      <div class="meta-grid">
+        <div class="meta-item"><span>PROJECT DATE</span><strong>2025 - 2026</strong></div>
+        <div class="meta-item"><span>ROLE</span><strong class="accent-text">Research, UX, UI</strong></div>
+        <div class="meta-item"><span>CLIENT</span><strong>Atresmedia</strong></div>
+        <div class="meta-item"><span>VISIT</span><a href="#" target="_blank" rel="noopener noreferrer" class="accent-text">coming soon/</a></div>
+      </div>
+      <div class="meta-copy-grid">
+        <p>La web presentaba un diseño desactualizado y había dejado de cumplir su función como biblioteca musical: la búsqueda era compleja, poco intuitiva y ofrecía resultados poco relevantes.
+
+A través de sesiones con stakeholders y un proceso de research centrado en el usuario, redefiní el enfoque del producto hacia una herramienta ágil y funcional. Replanteé la experiencia de búsqueda, incorporando un sistema basado en etiquetas y texto que facilita resultados rápidos y precisos, y reorganizé la arquitectura de contenidos para mejorar su comprensión.
+
+</p>
+        <p>Diseñé una nueva área de usuario y establecí una presentación más clara y coherente, priorizando la usabilidad. El resultado es una experiencia más intuitiva, eficiente y alineada con las necesidades reales de los usuarios.</p>
+      </div>
+    </section>
+    
+    <section class="showcase-block reveal-section"><img src="irradia/irradia-home.png" alt="Large showcase with multiple mobile app screens" width="1600" height="860" loading="eager" /></section>
+    <section class="duo-gallery reveal-section"><img src="irradia/irradia-phone.png" alt="Abstract image with concentric light arcs" width="950" height="1050" loading="lazy" /><img src="irradia/irradia-paleta.png" alt="Abstract image with colorful reflective spheres" width="950" height="1050" loading="lazy" /></section>
+    <section class="more-projects reveal-section"><h2>More Projects</h2><div class="more-projects-grid"><article><img src="https://picsum.photos/seed/project-more-1/600/320" alt="Dark abstract project preview" width="600" height="320" loading="lazy" /><p>Lorem ipsum dolor</p></article><article><img src="https://picsum.photos/seed/project-more-2/600/320" alt="Minimal chair project preview" width="600" height="320" loading="lazy" /><p>Lorem ipsum dolor</p></article><article><img src="https://picsum.photos/seed/project-more-3/600/320" alt="Architectural glass facade project preview" width="600" height="320" loading="lazy" /><p>Lorem ipsum dolor</p></article></div></section>
+  </main>
+  <footer id="footer" class="site-footer reveal-section"><div class="footer-inner"><div class="footer-left"><p>Un día eres joven y al siguiente guardas cajas vacías “por si acaso”.</p></div><div class="footer-socials"><a href="#" aria-label="LinkedIn">in</a></div></div></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
